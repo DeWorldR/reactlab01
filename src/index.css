@@ -1,0 +1,181 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+.green-txt { color: green; font-weight: bold; } 
+
+.red-txt   { color: red;   font-weight: bold; } 
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* GradeList custom styles */
+.grade-list-container {
+  background: #fff;
+  color: #213547;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px 32px;
+}
+
+.grade-list-title {
+  margin-bottom: 16px;
+  font-size: 1.5em;
+  color: #646cff;
+}
+
+.grade-list-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.grade-list-input,
+.grade-list-select {
+  padding: 0.5em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.grade-list-add-btn {
+  background: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.grade-list-add-btn:hover {
+  background: #535bf2;
+}
+
+.grade-list-ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.grade-list-li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f6f8ff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+.grade-list-fail {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.grade-list-grade {
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+.grade-list-del-btn {
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3em 0.8em;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.grade-list-del-btn:hover {
+  background: #b71c1c;
+}
+
+.grade-list-calc-btn {
+  background: #21c47b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.grade-list-calc-btn:hover {
+  background: #179c5c;
+}
+
+.grade-list-gpa {
+  margin-top: 12px;
+  font-size: 1.2em;
+  color: #646cff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
